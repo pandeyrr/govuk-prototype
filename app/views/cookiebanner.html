@@ -1,0 +1,59 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+  
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">
+        Cookies Banner
+      </h1>
+      <h2 class="govuk-heading-m color-blue">
+        I am Cookies Banner
+      </h2>
+
+      <div class="govuk-cookie-banner" data-nosnippet role="region" aria-label="Cookies on [name of service]">
+        <div class="govuk-cookie-banner__message govuk-width-container">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+              <h2 class="govuk-cookie-banner__heading govuk-heading-m">
+                Cookies on [name of service]
+              </h2>
+              <div class="govuk-cookie-banner__content">
+                <p class="govuk-body">We use some essential cookies to make this service work.</p>
+                <p class="govuk-body">We’d also like to use analytics cookies so we can understand how you use the service and make improvements.</p>
+              </div>
+            </div>
+          </div>
+          <div class="govuk-button-group">
+            <button type="button" class="govuk-button" data-module="govuk-button">
+              Accept analytics cookies
+            </button>
+            <button type="button" class="govuk-button" data-module="govuk-button">
+              Reject analytics cookies
+            </button>
+            <a class="govuk-link" href="#">View cookies</a>
+          </div>
+        </div>
+      </div>
+
+      <p>
+        Read more <a href="/path/of/page">about this topic</a>.
+      </p>
+
+    </div>
+  </div>
+
+{% endblock %}

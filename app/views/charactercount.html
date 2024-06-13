@@ -1,0 +1,49 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+  
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">
+        Character count
+      </h1>
+      <h2 class="govuk-heading-m color-blue">
+        I am Character count
+      </h2>
+
+      <div class="govuk-form-group govuk-character-count" data-module="govuk-character-count" data-maxlength="200">
+        <h1 class="govuk-label-wrapper">
+          <label class="govuk-label govuk-label--l" for="with-hint">
+            Can you provide more detail?
+          </label>
+        </h1>
+        <div id="with-hint-hint" class="govuk-hint">
+          Do not include personal or financial information like your National Insurance number or credit card details.
+        </div>
+        <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="withHint" rows="5" aria-describedby="with-hint-info with-hint-hint"></textarea>
+        <div id="with-hint-info" class="govuk-hint govuk-character-count__message">
+          You can enter up to 200 characters
+        </div>
+      </div>
+
+      <p>
+        Read more <a href="/path/of/page">about this topic</a>.
+      </p>
+
+    </div>
+  </div>
+
+{% endblock %}

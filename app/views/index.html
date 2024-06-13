@@ -1,19 +1,78 @@
-{% extends "layouts/main.html" %}
-
-{% set pageName="Home" %}
-
-{% block content %}
+{% extends "layouts/main.html" %} {% set pageName="Home" %} {% block content %}
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
+    
+    <!-- {% include "govuk-prototype-kit/includes/homepage-top.njk" %} -->
 
-    {% include "govuk-prototype-kit/includes/homepage-top.njk" %}
+    <h1 class="govuk-heading-xl">{{ serviceName }}</h1>
+    <div class="govuk-grid-column-one-half">
 
-    <h1 class="govuk-heading-xl">
-      {{ serviceName }}
-    </h1>
 
-    {% include "govuk-prototype-kit/includes/homepage-bottom.njk" %}
+    <h2>
+      <a href="/accordion"> Accordion </a>
+    </h2>
+
+    <h2>
+      <a href="/backlink"> Back Link </a>
+    </h2>
+
+    <h2>
+      <a href="/button"> Button </a>
+    </h2>
+
+    <h2>
+      <a href="/charactercount"> Character count </a>
+    </h2>
+
+    <h2>
+      <a href="/checkbox"> Checkbox </a>
+    </h2>
+    <h2>
+    
+      <a href="/cookiebanner"> Cookie Banner </a>
+    </h2>
+    <h2>
+      <a href="/dateinput"> Date Input </a>
+    </h2>
+    <h2>
+      <a href="/errormessage"> Error Message </a>
+    </h2>
+    <h2>
+      <a href="/errorsummary"> Error Summary </a>
+    </h2>
+</div>
+    <div class="govuk-grid-column-one-half">
+
+    
+    <h2>
+      <a href="/fieldset"> Fieldset </a>
+    </h2>
+    <h2>
+      <a href="/footer"> Footer </a>
+    </h2>
+    <h2>
+      <a href="/header"> Header </a>
+    </h2>
+    <h2>
+      <a href="/notification-banner"> Notification Banner </a>
+    </h2>
+    <h2>
+      <a href="/pagination"> Pagination </a>
+    </h2>
+    <h2>
+      <a href="/panel"> Panel </a>
+    </h2>
+    <h2>
+      <a href="/table"> Table </a>
+    </h2>
+    <h2>
+      <a href="/summary-list"> Summary List </a>
+    </h2>
+    <h2>
+      <a href="/tabs"> Tabs </a>
+    </h2>
+
+
   </div>
 </div>
 
